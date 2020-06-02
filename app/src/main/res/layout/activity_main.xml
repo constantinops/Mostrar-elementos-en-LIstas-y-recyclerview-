@@ -6,11 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-   <ListView
-       android:id="@+id/lidta_persona"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent">
 
-   </ListView>
+   <Button
+       android:id="@+id/btn_lista_simple"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="44dp"
+       android:layout_marginTop="176dp"
+       android:text="Lista simple"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
 
+   <Button
+       android:id="@+id/btn_lista_persona"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="12dp"
+       android:text="Lista personalizada"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.184"
+       app:layout_constraintStart_toEndOf="@+id/btn_lista_simple"
+       app:layout_constraintTop_toTopOf="@+id/btn_lista_simple" />
 </androidx.constraintlayout.widget.ConstraintLayout>
