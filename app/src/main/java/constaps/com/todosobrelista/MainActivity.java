@@ -34,55 +34,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(MainActivity.this,ListaSimpleActivity.class);
                 startActivity(intent);
-
             }
         });
 
-
-
-
-
-    }
-/*
-    private  ArrayList<Entidad> getArray (){
-        ArrayList<Entidad> listaItem = new ArrayList<>();
-        listaItem.add(new Entidad(R.drawable.ic_add_location_black_24dp,"Constantino","omar"));
-        listaItem.add(new Entidad(R.drawable.ic_movie_black_24dp,"Abigail","tinu"));
-        return listaItem;
-    }
-*/
-
-
-    /*
-
-    public void listaPersona(){
-        final List<String> listaPersona = new ArrayList<String>(){{
-            add("tinu");
-            add("andrrea");
-            add("calu");
-            add("remi");
-            add("omar");
-            add("tinu");
-            add("andrrea");
-            add("calu");
-            add("remi");
-            add("omar");
-        }};
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,listaPersona);
-        listaNombre.setAdapter(adapter);
-
-        listaNombre.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        btnListaPersona.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(),"Alumno: "+listaPersona.get(position),Toast.LENGTH_SHORT).show();
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,ListaPersonalizadaActivity.class);
+                startActivity(intent);
             }
         });
 
     }
-
-     */
-
-
 
 }

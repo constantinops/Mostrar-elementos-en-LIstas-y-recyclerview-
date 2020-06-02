@@ -15,7 +15,9 @@
        android:layout_marginTop="176dp"
        android:text="Lista simple"
        app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent" />
+       app:layout_constraintTop_toTopOf="parent"
+       android:textAllCaps="false"
+       />
 
    <Button
        android:id="@+id/btn_lista_persona"
@@ -26,5 +28,7 @@
        app:layout_constraintEnd_toEndOf="parent"
        app:layout_constraintHorizontal_bias="0.184"
        app:layout_constraintStart_toEndOf="@+id/btn_lista_simple"
-       app:layout_constraintTop_toTopOf="@+id/btn_lista_simple" />
+       app:layout_constraintTop_toTopOf="@+id/btn_lista_simple"
+       android:textAllCaps="false"
+       />
 </androidx.constraintlayout.widget.ConstraintLayout>
