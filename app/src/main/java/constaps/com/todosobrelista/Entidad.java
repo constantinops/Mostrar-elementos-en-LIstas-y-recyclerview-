@@ -1,15 +1,19 @@
 package constaps.com.todosobrelista;
 
-public class Entidad {
+import java.io.Serializable;
+
+public class Entidad implements Serializable {
 
     private int imgPersona;
     private String profesor;
     private String alumno;
+    private String descripcion;
 
-    public Entidad(int imgPersona,String profesor,String alumno){
+    public Entidad(int imgPersona,String profesor,String alumno,String descripcion){
         this.imgPersona = imgPersona;
         this.profesor = profesor;
         this.alumno = alumno;
+        this.descripcion = descripcion;
 
     }
 
@@ -22,6 +26,8 @@ public class Entidad {
     public String getAlumno(){
         return alumno;
     }
+    public String getDescripcion(){return descripcion;}
+
 
 
 }

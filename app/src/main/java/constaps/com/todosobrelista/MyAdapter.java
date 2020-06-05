@@ -58,6 +58,7 @@ public class MyAdapter extends BaseAdapter{
         profe.setText(iteLista.getProfesor());
         alumno.setText(iteLista.getAlumno());
 
+
         return v;
     }
 }
