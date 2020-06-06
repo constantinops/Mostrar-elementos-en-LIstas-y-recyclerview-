@@ -1,75 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
     >
-
-
-    <TextView
-        android:id="@+id/text"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:text="Profe"
-        android:gravity="center"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark"
+        android:layout_height="match_parent"
 
-        />
-    <TextView
-        android:id="@+id/text_detalle_profe"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:gravity="center"
-        android:text="tinu"
-        android:textStyle="normal"
-        android:textSize="20sp"
-        android:textColor="#000000"
-        />
-
-    <ImageView
-        android:id="@+id/img_detalle_alumno"
-        android:layout_width="308dp"
-        android:layout_height="189dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/ic_movie_black_24dp" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
         >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Alumno:"
-            android:textSize="25sp"
-            android:textColor="@color/colorPrimaryDark"
-            android:textStyle="bold"
-            />
-        <TextView
-            android:id="@+id/text_detalle_alumno"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="aby"
-            android:textStyle="normal"
-            android:textSize="20sp"
-            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/colorPrimary"
+                android:elevation="16dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                >
+                <ImageButton
+                    android:id="@+id/img_detalle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_arrow_back_black_24dp"
+                    android:background="@drawable/color_editex_visible"
+                    android:layout_marginStart="5dp"
+                    android:elevation="15dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Detalle Alumno"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:layout_marginStart="20dp"
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/img_detalle_alumno"
+                android:layout_width="308dp"
+                android:layout_height="189dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_account_circle_black_24dp"
+
+                />
 
 
-    </LinearLayout>
-    <TextView
-        android:id="@+id/text_detalle_descripcion"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="descripcion"
-        android:textSize="18sp"
-        android:textStyle="normal"
-        android:textColor="@color/colorPrimary"
-        />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profesor:"
+                    android:layout_marginStart="20dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    />
+                <TextView
+                    android:id="@+id/text_detalle_profe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="tinu"
+                    android:textStyle="normal"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#000000"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alumn@:"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+
+                    />
+                <TextView
+                    android:id="@+id/text_detalle_alumno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="aby"
+                    android:textStyle="normal"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calificacion:"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginStart="20dp"
+                    />
+                <TextView
+                    android:id="@+id/text_calificacion_detalles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="10"
+                    android:textColor="#FBC02D"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/text_deta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descripcion:"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_marginStart="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/text_detalle_descripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="descripcion"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:textColor="#000000"
+                    android:layout_marginStart="10dp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
 
 </LinearLayout>

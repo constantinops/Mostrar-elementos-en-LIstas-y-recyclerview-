@@ -77,30 +77,30 @@ public class ListaPersonalizadaActivity extends AppCompatActivity {
     public ArrayList<Entidad> getLista(){
 
         ArrayList<Entidad> iteLista = new ArrayList<Entidad>(){{
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"constantino","tinu","es un alumno malo"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"Abigail","consta","es un alumno bueno"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"rene","leni","es un alumno regular"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"constantino","tinu","es un alumno malo"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"Abigail","consta","es un alumno bueno"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"rene","leni","es un alumno regular"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"constantino","tinu","es un alumno malo"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"Abigail","consta","es un alumno bueno"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"rene","leni","es un alumno regular"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"constantino","tinu","es un alumno malo"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"Abigail","consta","es un alumno bueno"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"rene","leni","es un alumno regular"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"constantino","tinu","es un alumno malo"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"Abigail","consta","es un alumno bueno"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"rene","leni","es un alumno regular"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"constantino","tinu","es un alumno malo"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"Abigail","consta","es un alumno bueno"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"rene","leni","es un alumno regular"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"constantino","tinu","es un alumno malo"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"Abigail","consta","es un alumno bueno"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"rene","leni","es un alumno regular"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"constantino","tinu","es un alumno malo"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"Abigail","consta","es un alumno bueno"));
-            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"rene","leni","es un alumno regular"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"constantino","tinu","es un alumno malo","5"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"Abigail","consta","es un alumno bueno","9"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"rene","leni","es un alumno regular","8"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"constantino","tinu","es un alumno malo","5"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"Abigail","consta","es un alumno bueno","9"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"rene","leni","es un alumno regular","8"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"constantino","tinu","es un alumno malo","5"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"Abigail","consta","es un alumno bueno","9"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"rene","leni","es un alumno regular","8"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"constantino","tinu","es un alumno malo","5"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"Abigail","consta","es un alumno bueno","9"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"rene","leni","es un alumno regular","8"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"constantino","tinu","es un alumno malo","5"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"Abigail","consta","es un alumno bueno","9"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"rene","leni","es un alumno regular","8"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"constantino","tinu","es un alumno malo","5"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"Abigail","consta","es un alumno bueno","9"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"rene","leni","es un alumno regular","8"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"constantino","tinu","es un alumno malo","6"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"Abigail","consta","es un alumno bueno","9"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"rene","leni","es un alumno regular","8"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"constantino","tinu","es un alumno malo","5"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"Abigail","consta","es un alumno bueno","9"));
+            add(new Entidad(R.drawable.ic_account_circle_black_24dp,"rene","leni","es un alumno regular","8"));
 
         }};
 
