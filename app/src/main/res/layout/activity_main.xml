@@ -27,6 +27,7 @@
    </RelativeLayout>
 
    <LinearLayout
+       android:id="@+id/linl_lista"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="20dp"
@@ -53,7 +54,7 @@
           android:id="@+id/btn_lista_simple"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:text="Lista simple"
+          android:text="Lista Alumnos 5B"
           android:textAllCaps="false"
           android:layout_margin="10dp"
           android:textColor="@drawable/text_btn"
@@ -64,7 +65,7 @@
           android:id="@+id/btn_lista_persona"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:text="Lista personalizada"
+          android:text="Lista Profesores"
           android:textAllCaps="false"
           android:layout_marginEnd="10dp"
           android:layout_marginBottom="10dp"

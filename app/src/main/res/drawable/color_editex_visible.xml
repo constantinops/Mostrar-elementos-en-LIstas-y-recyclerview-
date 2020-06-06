@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="#ffcdd2" xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:drawable="@drawable/rgb_boton_atras"/>
+</ripple>
