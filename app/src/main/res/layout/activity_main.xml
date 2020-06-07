@@ -13,72 +13,154 @@
        android:elevation="16dp"
        android:gravity="center"
       >
+
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="Listas y recyclerview"
-          android:gravity="center"
           android:layout_gravity="center_vertical"
-          android:textSize="40sp"
+          android:gravity="center"
+          android:text="ListView y recyclerview"
           android:textColor="#ffffff"
+          android:textSize="35sp"
 
-         />
+          />
 
    </RelativeLayout>
 
    <LinearLayout
        android:id="@+id/linl_lista"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="20dp"
-    android:elevation="12dp"
-    android:layout_margin="20dp"
-
-    >
-   <ImageView
-       android:layout_width="100dp"
-       android:layout_height="match_parent"
-       android:src="@drawable/ic_format_list_numbered_black_24dp"
-       android:elevation="6dp"
-
-       />
-
-   <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
+       android:elevation="12dp"
+       android:layout_margin="20dp"
        android:orientation="vertical"
 
+    >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Mostrar elementos en ListView"
+          android:layout_gravity="center_horizontal"
+          android:textSize="20sp"
+          android:textStyle="normal"
+          android:textColor="#000000"
+          />
 
-       >
-      <Button
-          android:id="@+id/btn_lista_simple"
+
+
+
+      <LinearLayout
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:text="Lista Alumnos 5B"
-          android:textAllCaps="false"
-          android:layout_margin="10dp"
-          android:textColor="@drawable/text_btn"
-          android:background="@drawable/color_btn"
+          android:orientation="horizontal"
+          >
 
-          />
-      <Button
-          android:id="@+id/btn_lista_persona"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:text="Lista Profesores"
-          android:textAllCaps="false"
-          android:layout_marginEnd="10dp"
-          android:layout_marginBottom="10dp"
-          android:gravity="center"
-          android:layout_marginStart="10dp"
-          android:textColor="@drawable/text_btn"
-          android:background="@drawable/color_btn"
-          />
-   </LinearLayout>
+         <ImageView
+             android:layout_width="100dp"
+             android:layout_height="match_parent"
+             android:src="@drawable/ic_format_list_numbered_black_24dp"
+             android:elevation="6dp"
+
+             />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+
+
+             >
+            <Button
+                android:id="@+id/btn_lista_simple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lista Alumnos 5B"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                android:textColor="@drawable/text_btn"
+                android:background="@drawable/color_btn"
+
+                />
+            <Button
+                android:id="@+id/btn_lista_persona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lista Profesores"
+                android:textAllCaps="false"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:textColor="@drawable/text_btn"
+                android:background="@drawable/color_btn"
+                />
+         </LinearLayout>
+
+      </LinearLayout>
+
 
 
 
 </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="20dp"
+       android:layout_marginEnd="20dp"
+       android:elevation="12dp"
+       android:orientation="vertical"
+       >
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Mostrar elementos en Recyclerview"
+          android:textSize="20sp"
+          android:layout_gravity="center_horizontal"
+          android:gravity="center"
+          android:textColor="#000000"
+          />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+         <ImageView
+             android:layout_width="100dp"
+             android:layout_height="match_parent"
+             android:src="@drawable/ic_list_black_24dp"
+             />
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lista Alumnos 5B"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                android:textColor="@drawable/text_btn"
+                android:background="@drawable/color_btn"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lista Profesores"
+                android:textColor="@drawable/text_btn"
+                android:background="@drawable/color_btn"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+
+                />
+
+         </LinearLayout>
+
+
+      </LinearLayout>
+
+   </LinearLayout>
 
 
 
