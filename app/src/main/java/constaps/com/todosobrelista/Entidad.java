@@ -21,6 +21,10 @@ public class Entidad implements Serializable {
 
     }
 
+    public Entidad(){
+
+    }
+
     public int getImgPersona(){
         return imgPersona;
     }
