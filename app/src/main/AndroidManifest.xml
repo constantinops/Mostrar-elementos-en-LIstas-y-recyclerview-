@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RecycleSimpleActivity"></activity>
+        <activity android:name=".DetalleRecycleActivity"></activity>
+        <activity android:name=".ListaProfeRecycle" />
+        <activity android:name=".RecycleSimpleActivity" />
         <activity android:name=".DetallesActivity" />
         <activity android:name=".ListaSimpleActivity" />
         <activity android:name=".ListaPersonalizadaActivity" />

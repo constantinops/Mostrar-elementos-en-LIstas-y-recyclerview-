@@ -22,6 +22,7 @@ public class DetallesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_detalle_item);
         objetoData = (Entidad)getIntent().getSerializableExtra("objetoData");
+
         texDetalleProfe = findViewById(R.id.text_detalle_profe);
         textDetalleAlumno = findViewById(R.id.text_detalle_alumno);
         texDetalleDescripcion = findViewById(R.id.text_detalle_descripcion);
@@ -32,8 +33,7 @@ public class DetallesActivity extends AppCompatActivity {
         imgBtnAtras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),ListaPersonalizadaActivity.class);
-                startActivity(intent);
+                onBackPressed();
             }
         });
 

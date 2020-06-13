@@ -52,13 +52,12 @@ public class ListaPersonalizadaActivity extends AppCompatActivity {
         btnImgAtras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(intent);
+                onBackPressed();
             }
         });
 
         itemArray = getLista();
-        MyAdapter  myAdapter = new MyAdapter(this,itemArray);
+        MyAdapter  myAdapter = new MyAdapter(getApplicationContext(),itemArray);
         listViewPersonalizado.setAdapter(myAdapter);
         listViewPersonalizado.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

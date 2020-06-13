@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".ListaProfeRecycle">
+
+    <LinearLayout
+        android:id="@+id/ly_buscar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary"
+        android:elevation="18dp"
+        >
+        <ImageButton
+            android:id="@+id/btn_recycle_atras"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_gravity="center"
+            android:elevation="15dp"
+            android:background="@drawable/color_editex_visible"
+            android:layout_marginStart="5dp"
+
+
+            />
+        <LinearLayout
+            android:id="@+id/linia_editex"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rgb_barra_buscar"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+
+
+            >
+            <ImageView
+                android:id="@+id/img_buscar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="1dp"
+                />
+
+            <EditText
+                android:id="@+id/edit_buscar"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:focusableInTouchMode="true"
+                android:hint="Buscar Alumno"
+                android:focusable="true"
+                android:visibility="visible"
+
+
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lista_profe_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+</LinearLayout>

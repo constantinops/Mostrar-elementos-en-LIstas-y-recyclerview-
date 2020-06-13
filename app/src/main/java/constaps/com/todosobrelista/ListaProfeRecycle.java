@@ -7,27 +7,40 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class RecycleSimpleActivity extends AppCompatActivity {
+public class ListaProfeRecycle extends AppCompatActivity {
 
-    private RecyclerView listaAlumno;
-    private RecyclerView.Adapter myAdaptador;
-    private RecyclerView.LayoutManager layoutVista;
-    private ArrayList<Entidad> alumno;
-    private ImageButton btnImgAtras;
+    private RecyclerView recycleListaAlumno;
+    private RecyclerView.Adapter myAdapter;
+    private RecyclerView.LayoutManager vistaLista;
+    private ArrayList<Entidad> aregloContenedor;
+    private ImageView imgAtras;
+
+    private EditText textBuscar;
+    private  ImageView imgBuscar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recycle_simple);
-        listaAlumno =  findViewById(R.id.recycle_alumno);
-        btnImgAtras = findViewById(R.id.img_boton_atras);
-        btnImgAtras.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_lista_profe_recycle);
+        recycleListaAlumno = findViewById(R.id.lista_profe_recycle);
+        imgAtras = findViewById(R.id.btn_recycle_atras);
+        textBuscar = findViewById(R.id.edit_buscar);
+        textBuscar.setSelected(false);
+
+        textBuscar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            }
+        });
+
+
+        imgAtras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
@@ -35,14 +48,23 @@ public class RecycleSimpleActivity extends AppCompatActivity {
         });
 
 
-        alumno = getAlumno();
 
-        layoutVista = new LinearLayoutManager(this);
-        myAdaptador = new MyAdapterR(R.layout.item_recycleview,alumno);
-        listaAlumno.setAdapter(myAdaptador);
-        listaAlumno.setLayoutManager(layoutVista);
+        aregloContenedor = getAlumno();
+        vistaLista = new LinearLayoutManager(this);
+        myAdapter = new MyAdapterRecycle(R.layout.layaut_lista_personalizada, aregloContenedor, new MyAdapterRecycle.OnItemClick() {
+            @Override
+            public void onItemClic(String nombreAlumno, int position) {
+                Toast.makeText(getApplicationContext(),"alumno"+nombreAlumno,Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(),DetalleRecycleActivity.class);
+                intent.putExtra("detalleprofe",aregloContenedor.get(position));
+                startActivity(intent);
+            }
+        });
+        recycleListaAlumno.setAdapter(myAdapter);
+        recycleListaAlumno.setLayoutManager(vistaLista);
+
+
     }
-
 
     public ArrayList<Entidad> getAlumno(){
         return new ArrayList<Entidad>(){{
@@ -74,6 +96,4 @@ public class RecycleSimpleActivity extends AppCompatActivity {
 
         }};
     }
-
-
 }

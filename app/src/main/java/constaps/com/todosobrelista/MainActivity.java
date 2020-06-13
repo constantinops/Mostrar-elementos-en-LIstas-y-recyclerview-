@@ -21,7 +21,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     private ListView listaNombre;
     private MyAdapter myAdapter;
-    private Button btnListaSimpl,btnListaPersona,btnRecicleAlumno;
+    private Button btnListaSimpl,btnListaPersona,btnRecicleAlumno,btnListaProfe;
     private Animation animImg;
     private LinearLayout lista;
 
@@ -32,8 +32,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnListaSimpl = findViewById(R.id.btn_lista_simple);
+
         btnListaPersona = findViewById(R.id.btn_lista_persona);
+
         btnRecicleAlumno = findViewById(R.id.btn_recycle_alumno);
+
+        btnListaProfe =  findViewById(R.id.btn_lista_profe_recycle);
         lista = findViewById(R.id.linl_lista);
         animImg = AnimationUtils.loadAnimation(this,R.anim.anim_img);
         lista.startAnimation(animImg);
@@ -61,6 +65,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,RecycleSimpleActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnListaProfe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),ListaProfeRecycle.class);
                 startActivity(intent);
             }
         });

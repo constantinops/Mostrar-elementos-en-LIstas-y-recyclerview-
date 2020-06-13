@@ -5,6 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -47,15 +48,21 @@ public class MyAdapterR extends RecyclerView.Adapter<MyAdapterR.viewHolder>{
     }
 
     public static class viewHolder extends RecyclerView.ViewHolder {
-        TextView textAlumno;
+        private TextView textAlumno,textProfe,textAlumnon;
+        private ImageView imgAlumno;
+
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
             textAlumno = itemView.findViewById(R.id.textv_recicle_alumno);
+
+
         }
 
         public void asignarElemento(Entidad alumno){
             textAlumno.setText(alumno.getAlumno());
+
+
 
         }
     }
